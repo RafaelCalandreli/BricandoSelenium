@@ -19,6 +19,7 @@ public class SignTest {
         System.setProperty("webdriver.chrome.driver","C:\\Program Files\\ChormeDriver\\chromedriver.exe");
         //Chamar o navegador
         WebDriver navegador = new ChromeDriver();
+        navegador.manage().window().maximize();
         navegador.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         //Abrir a página
         navegador.get("http://www.juliodelima.com.br/taskit/");
